@@ -36,14 +36,14 @@ const Editbook = () => {
     setLoading(true);
     console.log("handle book");
     axios
-      .put(`http://localhost:5555/books/${id}`, data)
+      .put(`https://mernback-vc9y.onrender.com/books/${id}`, data)
       .then(() => {
         setLoading(false);
         navigate("/");
       })
       .catch((error) => {
         setLoading(false);
-        alert("an error happened");
+        alert("an error happened here");
         console.log(error);
       });
   };
