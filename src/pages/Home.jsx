@@ -45,9 +45,14 @@ const Home = () => {
         </button>
       </div>
       <div className="flex justify-between items-center">
-        <h1 className="text-3x1 my-8"> Books List</h1>
+        <h1 className="text-3x1 my-8">
+          {" "}
+          <th>Books List</th>
+        </h1>
         <div className="flex justify-between items-center">
-          <h1 className="my-8 p-2">create new book</h1>
+          <h1 className="my-8 p-2">
+            <th>create new book</th>
+          </h1>
           <Link to="/books/create">
             <span>
               <MdOutlineAddBox className="text-sky-2000 text-10x1" />
